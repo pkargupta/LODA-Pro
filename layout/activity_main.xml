@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:id="@+id/horizontalScrollView"
+        android:foregroundGravity="center_vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center|center_vertical|top"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#e6e6e6">
+
+        <Button
+            android:id="@+id/homebtn"
+            android:layout_width="90dp"
+            android:layout_height="47dp"
+            android:background="@drawable/homes"
+            android:onClick="openHome"
+            android:textSize="14sp"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/linearLayout"
+            android:layout_alignStart="@+id/linearLayout" />
+
+        <Button
+            android:id="@+id/contactbtn"
+            android:layout_width="90dp"
+            android:layout_height="47dp"
+            android:background="@drawable/contacts"
+            android:onClick="openContacts"
+            android:textSize="14sp"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/linearLayout"
+            android:layout_alignStart="@+id/linearLayout" />
+
+        <Button
+            android:id="@+id/tohomebtn"
+            android:layout_width="90dp"
+            android:layout_height="47dp"
+            android:background="@drawable/directions"
+            android:onClick="openLocationActivity"
+            android:textSize="14sp"
+            android:layout_below="@+id/alertprobtn"
+            android:layout_alignLeft="@+id/linearLayout" />
+
+        <Button
+            android:id="@+id/alertprobtn"
+            android:layout_width="90dp"
+            android:layout_height="47dp"
+            android:background="@drawable/alertpro"
+            android:onClick="openAlertPro"
+            android:textSize="14sp"
+            android:layout_below="@+id/contactbtn"
+            android:layout_alignLeft="@+id/linearLayout" />
+    </LinearLayout>
+</HorizontalScrollView>
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/hello_world"
+        android:src="@drawable/lodatranslogo"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_below="@+id/horizontalScrollView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/help"
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:background="@drawable/ghbutton"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="30sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Copyright 2014. Priyanka Kargupta"
+        android:id="@+id/copyright"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/currentadd"
+        android:layout_below="@+id/help"
+        android:layout_centerHorizontal="true"
+        android:text="@string/CurrentLocation" />
+
+</RelativeLayout>

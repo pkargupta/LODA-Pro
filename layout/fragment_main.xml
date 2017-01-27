@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.locatedamini.loda.MainActivity$PlaceholderFragment"
+    android:background="@drawable/bluegradient">
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/hello_world"
+        android:paddingLeft="25dp"
+        android:src="@drawable/lodatranslogo"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/Button_Group"
+        android:layout_alignEnd="@+id/Button_Group" />
+
+    <LinearLayout
+        android:id="@+id/Button_Group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:paddingLeft="7dp" >
+
+        <Button
+            android:id="@+id/contactbtn"
+            android:layout_width="82dp"
+            android:layout_height="75dp"
+            android:background="@drawable/greygradientrorec"
+            android:onClick="openContacts"
+            android:text="@string/Contact"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/tohomebtn"
+            android:layout_width="82dp"
+            android:layout_height="75dp"
+            android:background="@drawable/greygradientrorec"
+            android:onClick="openLocationActivity"
+            android:text="@string/To_Home"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/alertprobtn"
+            android:layout_width="82dp"
+            android:layout_height="75dp"
+            android:background="@drawable/greygradientrorec"
+            android:onClick="openAlertPro"
+            android:text="@string/AlertPro"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Help_Btn"
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:background="@drawable/round_button"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/Get_Help"
+        android:textSize="30sp"
+        android:layout_below="@+id/Button_Group"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
