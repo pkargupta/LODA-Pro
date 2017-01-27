@@ -1,4 +1,5 @@
 # LODA-Pro
+URL to Play Store: https://play.google.com/store/apps/details?id=com.locatedamini.loda&hl=en
 The LODA Project, also known as the Locate Damini Project, was created to aid people in emergency situations when there is no time available for the police to arrive. So far, this app provides a quick alert button to immediately notify your preset contacts with your exact GPS coordinates, address, and a preset message.
 Features:
 - Send a notification/alert SMS to the users' preset contacts (user is able to load them straight from their Google contacts OR manually add them)
